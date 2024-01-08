@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Old Stairwell 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130313
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Karlsruhe Graph Drawing</title>
+<meta name="keywords" content="graph drawing, multilevel algorithm, multilevel graph drawing, full stress, kadraw, maxent-stress, maxent, software, schulz, meyerhenke, nöllenburg, networks, large networks, network visualization, visualization, data, parallel algorithms, approximation"/>
+<meta name="description" content="The main project page of to open source graph drawing KaDraw -- Karlsruhe Graph Drawing" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">KaDraw - </a><a href="#" style="color:red">Ka</a><a href="#">rlsruhe </a> <a href="#">Graph</a> <a href="#" style="color:red">Draw</a><a href="#">ing</a></h1>
+                        <br>
+                        Henning Meyerhenke, Martin Nöllenburg and Christian Schulz
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="#" accesskey="1" title="">Homepage</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+			<h2>Overview</h2>
+
+                        This is the open source project KaDraw - Karlsruhe Graph Drawing. 
+So far, it contains the algorithm MulMent [1] which is alternative iterative local optimizer suggested by Gansner et. al usable and fast in practice. 
+<br>
+MulMent is a multilevel algorithm tailored to large networks. Its main drawing routine is a local optimizer suggested by Gansner et al. [2], which we have made fast in practice. Moreover, MulMent employs a coarsening algorithm for building the multilevel hierarchy that can control the trade-off between the number of hierarchy levels and convergence speed of the local optimizer. The speed of the local optimizer stems from (i) shared-memory parallelism and (ii) approximation of long-range forces by using coarser representatives stored in the multilevel hierarchy.
+ <br><br>Example drawing of bcsstk31:
+<br>
+<br>
+<p><img alt="Example drawing." src="images/bcsstk31.png" width=350></p>
+
+<b style="color:red">News:</b>       <br>
+<b>September 2015:</b> Initial Release of MulMent codes within the framework. <br> <br>
+
+ 
+
+			<h2>Licence</h2>
+                        The program is licenced under GPL 2.0. Please let us know if you need a commercial licence.<br>
+                        If you publish results using our algorithms, <b>please acknowledge</b> our work by quoting the following paper:<br><br>
+                        <b>@inproceedings{mulment2015, <br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp AUTHOR = {Meyerhenke, Henning and Nöllenburg, Marting and Schulz, Christian},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       TITLE = {{Drawing Large Graphs by Multilevel Maxent-Stress Optimization}},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       BOOKTITLE = {Proceedings of the 23rd International Symposium on Graph Drawing & Network Visualization},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       SERIES    = {LNCS},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       PUBLISHER = {Springer},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       YEAR    = {2015}<br>
+<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       VOLUME = {7933},<br>-->
+  <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       PAGES = {164--175}<br>-->
+                        }</b>
+<br><br>
+
+
+</ul>
+                        <p></p>
+			<h2>Download</h2>
+                        <ul>
+                                <li> <a href="http://algo2.iti.kit.edu/schulz/software_releases/KaDraw_v1.01.tar.gz">KaDraw_v1.01.tar.gz</a> (or available on GitHub <a href="https://github.com/schulzchristian/KaDraw/">here</a>) 
+                                <li> <a href="http://algo2.iti.kit.edu/schulz/software_releases/kadraw.pdf">User Guide</a> 
+
+
+                        </ul>
+
+			<h2>Support</h2>
+                        <ul>
+                                <li> Write us an <a href="mailto:christian.schulz@univie.ac.at?subject=SupportRequestKaDraw">email</a> if you need support!  
+                                <li>We are glad for any comments and error reports (or even bug fixes or feature requests) that you send us. 
+                                <li>Graphs used in our papers will be provided to you on request!
+                                </ul>
+                                
+	<h2>References</h2>
+                        <ul>
+                                <li> [1] Henning Meyerhenke, Martin Nöllenburg and Christian Schulz. Drawing Large Graphs by Multilevel Maxent-Stress Optimization. Proceedings of the 23rd International Symposium on Graph Drawing & Network Visualization. 2015.<br> <a href="http://arxiv.org/pdf/1506.04383.pdf">PDF here</a>.
+                                <li> [2] Emden R. Gansner, Yifan Hu and Stephen North. A Maxent-Stress Model for Graph Layout. IEEE Transactions on Visualization and Computer Graphfics, Vol. 19, No. 6, 2013.
+                                </ul>
+  
+
+			<h2>Other Open Source Frameworks</h2>
+                        <ul>
+                                <li> <a href="http://algo2.iti.kit.edu/kahip">KaHIP</a> -- Karlsruhe High Quality Partitioning 
+                                <li> <a href="http://algo2.iti.kit.edu/kahip">ParHIP</a> -- Parallel High Quality Partitioning 
+                                <li> <a href="http://algo2.iti.kit.edu/kalp">KaLP</a> -- Karlsruhe Longest Paths 
+                                <li> <a href="http://algo2.iti.kit.edu/kamis">KaMIS</a> -- Karlsruhe Maximum Independent Sets
+                                <li> <a href="http://viem.taa.univie.ac.at">VieM</a> -- Vienna Mapping and Sparse Quadratic Assignment 
+                                <li> <a href="http://vieclus.taa.univie.ac.at">VieClus</a> -- Vienna Graph Clustering
+
+	        </div>
+
+
+
+	        </div>
+
+        </div>
+	<div id="footer">
+		<p>Copyright (c) 2013-2015. Site maintained by Christian Schulz. All rights reserved. See main site for impressum. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+	</div>
+</div>
+</body>
+</html>
